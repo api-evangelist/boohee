@@ -1,8 +1,14 @@
 aid: boohee
 name: Boohee
-description: 'Boohee is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Boohee (薄荷健康) is a Chinese consumer health-technology company focused on scientific
+  weight management, serving a cumulative 180 million users over its ~17-year history. Its portfolio spans
+  the Boohee Health mobile app (calorie and food tracking, diet and exercise logging, AI weight-management
+  coaching, meal plans, smart body scales, community), Boohee Life nutritional foods and subscription
+  services, the Boohee Life Internet Hospital (Tianjin-based telemedicine for internal and traditional
+  Chinese medicine), and a Boohee weight-loss SaaS platform that helps hospitals stand up weight-management
+  clinics. The company operates as a consumer mobile and content platform and does not publish a public
+  developer API or open platform; this profile is maintained in the API Evangelist network as a portfolio
+  lead of DCM Ventures.'
 url: https://raw.githubusercontent.com/api-evangelist/boohee/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,30 @@ x-backed-by:
 - dcm-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://www.boohee.com/favicon.png
 tags:
 - Company
 - Consumer
+- Health
+- Nutrition
+- Weight Management
+- Telemedicine
+- Mobile App
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/boohee-domain-security.yml
 - type: Website
   url: http://www.boohee.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
